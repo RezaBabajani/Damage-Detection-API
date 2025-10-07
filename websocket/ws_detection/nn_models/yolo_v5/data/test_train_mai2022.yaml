@@ -1,0 +1,16 @@
+train: C:/Users/r.babajani/PycharmProjects/Yolo_v5/dataset/images/train
+val: C:/Users/r.babajani/PycharmProjects/Yolo_v5/dataset/images/val
+test: C:/Users/r.babajani/PycharmProjects/Yolo_v5/dataset/images/test
+
+# Number of classes
+nc: 11
+
+# Class names
+
+names: [ "Scratch", "Backlight", "Deformed", "Frontlight",
+        "Crack", "Misplaced", "Dent", "Varnish", "Rust",
+        "Missing part", "Glass"]
+
+#nc: 1
+#
+#names: ["Damaged"]

@@ -1,0 +1,28 @@
+version: "3"
+
+services:
+  app:
+    build: api_detections
+    container_name: fastapi-uvicorn
+    restart: always
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [ gpu ]
+    env_file:
+      - ./fastapi.env
+    volumes:
+      - ./api_detections/:/src
+    ports:
+      - "8080:8080"
+    command:
+      "uvicorn FastAPI_pages:app --host 0.0.0.0 --port 8080 --workers 1"
+  redis:
+    image: redis:6-alpine
+    container_name: redis
+    restart: always
+    ports:
+      - "6379:6379"

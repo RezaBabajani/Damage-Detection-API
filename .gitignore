@@ -1,0 +1,10 @@
+
+/websocket/ws_detection/nn_models/models/damage_detection.pt
+/websocket/ws_detection/database.ini
+/websocket/ws_detection/.env
+/websocket/ws_detection/database_management/.env
+/FASTAPI/api_detections/database.ini
+/FASTAPI/api_detections/.env
+/FASTAPI/api_detections/database_management/.env
+/FASTAPI/api_detections/nn_models/models/damage_detection.pt
+
