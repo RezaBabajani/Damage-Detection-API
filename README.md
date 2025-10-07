@@ -17,8 +17,6 @@ Within the database_management folder, you will find the add_new_user_postgres.p
     'pays': 'France',
 ````
 
-![img.png](img.png)
-
 ## Token Generation and Validation
 We use the `JWT` (JSON Web Token) method for token creation, with each token being valid for one month.
 
